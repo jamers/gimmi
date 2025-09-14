@@ -26,6 +26,7 @@ replay_pid*
 # IntelliJ
 *.iml
 .idea
+.run
 
 # maven
 target
