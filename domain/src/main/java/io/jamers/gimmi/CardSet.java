@@ -12,7 +12,7 @@ public class CardSet {
 
     private final String name;
     private int length;
-    private final List<Card> cards = new ArrayList<>(300);
+    private final Map<Integer, Card> cards = new HashMap<>();
 
     private CardSet(String name) {
         this.name = name;
@@ -36,6 +36,6 @@ public class CardSet {
     }
 
     public void add(int id, Card card) {
-        cards.add(id, card);
+        cards.put(id, card);
     }
 }
